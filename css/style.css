@@ -60,6 +60,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 .fixed {
@@ -93,6 +94,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 [tabindex="-1"]:focus {
@@ -615,9 +617,10 @@ pre code {
     max-width: 960px;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .container {
-    max-width: 1400px;
+    max-width: 90vw;
   }
 }
 
@@ -10400,7 +10403,7 @@ button.bg-dark:focus {
   /* WHAT */
   font-family: "Gotham";
   color: transparent !important;
-  font-size: calc(200px + 0.390625vw);
+  font-size: calc(190px + 0.390625vw);
 
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
@@ -10410,14 +10413,14 @@ button.bg-dark:focus {
   /* WE */
   font-family: "Gotham";
   color: #49AEA6 !important;
-  font-size: calc(170px + 0.390625vw);
+  font-size: calc(160px + 0.390625vw);
 }
 
 .text-gn-orange1 {
   /* DO */
   font-family: "Gotham";
   color: #F1BB00 !important;
-  font-size: calc(170px + 0.390625vw);
+  font-size: calc(160px + 0.390625vw);
 }
 
 .text-gn-white-desc {
@@ -11255,11 +11258,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   .text-gn-green1 {
     font-size: 300%;
   }
-
-  .text-gn-white1 {
-    /* WHAT */
-    font-size: 400%;
-  }
   
   .text-gn-green2 {
     /* WE */
@@ -11344,4 +11342,33 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
     right: 20px;
     top: 50%;
   }
+}
+
+/* arrow */
+
+.arrow-down {
+  box-sizing: border-box;
+  height: 2vw;
+  width: 2vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+.arrow-up {
+  box-sizing: border-box;
+  height: 2vw;
+  width: 2vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(225deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+.arrow-down:hover, .arrow-up:hover {
+  border-bottom-width: 5px;
+  border-right-width: 5px;
 }
