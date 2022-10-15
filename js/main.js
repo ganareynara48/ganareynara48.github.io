@@ -54,5 +54,3 @@ window.addEventListener('scroll', function () {
 		}
 	});
 });
-
-// smoothScroll.init();

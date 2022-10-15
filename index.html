@@ -11,47 +11,47 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet" type="text/css" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet" type="text/css" /> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+
   <div class="page">
 
-    <nav id="colorlib-main-nav" role="navigation" style="background-color: #49aea6 !important">
-      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+    <nav id="colorlib-main-nav" role="navigation" style="background-color: #49aea6 !important;">
+      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active" id="btn_close"><i></i></a>
+
       <div class="js-fullheight colorlib-table">
         <div class="colorlib-table-cell js-fullheight">
           <div class="row no-gutters">
             <div class="col-md-12 text-xl-center text-nav-sum">
               <ul>
-                <li><a href="index.html" class="text-gn-active">HOME</a></li>
-                <li><a href="about.html" class="text-gn-nav">OUR WORK</a></li>
-                <li><a href="blog.html" class="text-gn-nav">ABOUT US</a></li>
-                <li>
-                  <a href="contact.html" class="text-gn-nav">WHAT WE DO</a>
-                </li>
-                <li>
-                  <a href="contact.html" class="text-gn-nav">CONTACT US</a>
-                </li>
+                <li><a href="#" id="home" class="text-gn-active">HOME</a></li>
+                <li><a href="#" id="our_work" class="text-gn-nav">OUR WORK</a></li>
+                <li><a href="/about_us.html" id="about_us" class="text-gn-nav">ABOUT US</a></li>
+                <li><a href="#" id="what_we_do" class="text-gn-nav">WHAT WE DO</a></li>
+                <li><a href="#" id="contact_us" class="text-gn-nav">CONTACT US</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+
     </nav>
 
-    <div id="colorlib-page">
-      <header id="header">
-        <div class="container">
-          <div class="colorlib-navbar-brand">
-            <img class="colorlib-logo" src="./images/thrive_logo.svg" alt="" width="20%" />
-            <!-- <a class="colorlib-logo" href="index.html">Company Logo</a> -->
-          </div>
-          <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+    <header id="header">
+      <div class="container">
+        <div class="colorlib-navbar-brand">
+          <img class="colorlib-logo" src="./images/thrive_logo.svg" alt="" width="20%" />
+          <!-- <a class="colorlib-logo" href="index.html">Company Logo</a> -->
         </div>
-      </header>
+        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+      </div>
+    </header>
+
+    <div id="landing-page">
 
       <section class="hero-wrap js-fullheight" id="halaman1">
         <div class="container px-0">
@@ -60,7 +60,7 @@
             data-scrollax-parent="true">
 
             <div class="col-md-12 ftco-animate">
-              
+
               <div class="desc text-lg-left" style="line-height: 550%">
                 <br />
                 <a class="text-gn-white">LET'S </a>
@@ -71,18 +71,18 @@
               </div>
 
               <br>
-              <div class="desc" style="line-height: 0.3px; color: white;">
-                <center>
+              <div class="desc" style="color: white; margin-top: 3vw">
+                <center style="line-height: 0.3px;">
                   <a>scroll</a>
                   <a href="#halaman2">
                     <div class="arrow-down"></div>
                   </a>
-                </center>       
+                </center>
               </div>
 
             </div>
           </div>
-          
+
         </div>
       </section>
 
@@ -90,17 +90,17 @@
         <div class="container px-3">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
             data-scrollax-parent="true">
-
             <div class="col-md-12 ftco-animate text-lg-left">
-              <div class="desc" style="line-height: 550%">
+              <div class="desc" style="line-height: 550%;padding-top: 5vw;">
                 <a class="text-gn-white">WE PARTNER WITH </a> <br />
                 <a class="text-gn-green1">ETHICAL CONSCIOUS</a> <br />
                 <a class="text-gn-white">THEM </a>
                 <a class="text-gn-orange">THRIVE</a> <br />
               </div>
-              
-              <div class="desc" style="line-height: 0.3px; color: white; padding-top: 5vw;">
-                <center>
+
+              <div class="desc" style="color: white; padding-top: 8vw;">
+                <br>
+                <center style="line-height: 0.3px;">
                   <a href="#halaman1">
                     <div class="arrow-up"></div>
                   </a>
@@ -108,7 +108,7 @@
                   <a href="#halaman3">
                     <div class="arrow-down"></div>
                   </a>
-                </center>       
+                </center>
               </div>
 
             </div>
@@ -117,13 +117,13 @@
       </section>
 
       <section class="hero-wrap js-fullheight" id="halaman3">
-        <div class="container px-0">
+        <div class="container px-0" style="padding-top: 2vw;">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
             data-scrollax-parent="true">
 
             <div class="col-md-6 ftco-animate text-lg-left">
 
-              <div class="desc" style="line-height: 550%; white-space: nowrap;padding-top: 9vw;">
+              <div class="desc" style="line-height: 600%; white-space: nowrap;padding-top: 5vw;">
                 <a class="text-gn-white1">WHAT</a> <br />
                 <a class="text-gn-green2"> WE </a>
                 <a class="text-gn-orange1">DO</a> <br />
@@ -139,8 +139,8 @@
             </div>
 
             <div class="col-md-6 ftco-animate text-lg-center">
-              <div class="desc-img" style="padding-top: 9vw;"">
-                <img src="images/bsd.svg" width="90%" alt="circle" />
+              <div class="desc-img" style="padding-top: 6vw;"">
+                <img src=" images/bsd.svg" width="100%" alt="circle" />
               </div>
             </div>
 
@@ -153,7 +153,7 @@
                 <a href="#halaman4">
                   <div class="arrow-down"></div>
                 </a>
-              </center>       
+              </center>
             </div>
 
           </div>
@@ -165,24 +165,24 @@
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
             data-scrollax-parent="true">
             <div class="col-md-12 ftco-animate text-lg-center">
-              <div class="desc-founder" style="padding-top: 5vw;">
+              <div class="desc-founder" style="padding-top: 4.2vw;">
                 <a class="text-gn-white">MEET </a>
                 <a class="text-gn-green"> THE </a>
                 <a class="text-gn-orange">FOUNDER</a> <br />
                 <br />
               </div>
 
-              <div class="desc-img" style="line-height: 0.3px; padding-top: 1vw;">
+              <div class="desc-img" style="line-height: 0.3px; margin-top: 0.1vw;">
                 <img src="images/founder.svg" alt="founder" />
               </div>
 
-              <div class="desc" style="line-height: 0.3px; color: white; margin-bottom: 2vw">
+              <div class="desc" style="line-height: 0.3px; color: white; margin-bottom: 1vw;">
                 <center>
                   <a href="#halaman3">
                     <div class="arrow-up"></div>
                   </a>
                   <a>scroll</a>
-                </center>       
+                </center>
               </div>
 
             </div>
@@ -192,19 +192,43 @@
       </section>
 
       <ul class="navigation">
-        <li class="selected" onclick="location.href='index.html#halaman1';"  style="cursor:pointer;"></li>
-        <li onclick="location.href='index.html#halaman2';"  style="cursor:pointer;"></li>
-        <li onclick="location.href='index.html#halaman3';"  style="cursor:pointer;"></li>
-        <li onclick="location.href='index.html#halaman4';"  style="cursor:pointer;"></li>
+        <li class="selected" onclick="location.href='index.html#halaman1';" style="cursor:pointer;"></li>
+        <li onclick="location.href='index.html#halaman2';" style="cursor:pointer;"></li>
+        <li onclick="location.href='index.html#halaman3';" style="cursor:pointer;"></li>
+        <li onclick="location.href='index.html#halaman4';" style="cursor:pointer;"></li>
       </ul>
-      
+
     </div>
+
+    <footer class="footer">
+      
+      <div class="row align-items-center justify-content-left" data-scrollax-parent="true">
+        <div class="col-md-6 ftco-animate text-lg-left">
+          <div class="desc-founder" style="line-height: 3vw; margin-left: 3%;">
+            <a class="text-footer-white">LET'S</a> <br>
+            <a class="text-footer-white">STRIVE</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 ftco-animate text-lg-right">
+          <div class="desc-founder" style="line-height: 400%; margin-right:3%;">
+            <a style="margin-right: 6%; font-size: 200%;" id="connect">Connect</a>
+            <img src="/images/logo-ig.svg" alt="instagram" width="10%" style="margin-right: 6%;">
+            <img src="/images/logo-fb.svg" alt="facebook" width="4%" style="margin-right: 6%;">
+            <img src="/images/logo-in.svg" alt="instagram" width="8%">
+          </div>
+        </div>
+      </div>
+      
+    </footer>
+
   </div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>

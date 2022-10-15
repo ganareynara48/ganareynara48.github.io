@@ -64,6 +64,7 @@ html {
 }
 
 .fixed {
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -10381,6 +10382,15 @@ button.bg-dark:focus {
   -webkit-text-stroke-color: white;
 }
 
+.text-footer-white {
+  font-family: "Gotham";
+  color: white !important;
+  font-size: 5vw;
+
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
 .text-gn-green {
   font-family: "Gotham";
   color: #49AEA6 !important;
@@ -11308,6 +11318,18 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   .text-nav-sum {
     line-height: 200%;
   }
+
+  .text-footer-white {
+    font-size: 310%;
+    line-height: 100%;
+  
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+  }
+
+  #connect {
+    display: none;
+  }
   
 }
 
@@ -11371,4 +11393,21 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 .arrow-down:hover, .arrow-up:hover {
   border-bottom-width: 5px;
   border-right-width: 5px;
+}
+
+.footer {
+  padding-bottom: 1vw;
+  padding-top: 2vw;
+  margin-top: 7vw;
+  position: relative;
+  left: 0;
+  width: 100%;
+  background-color: #49AEA6;
+  color: white;
+  text-align: center;
+}
+
+.text-about {
+  color: white !important;
+  font-size: 1.5vw;
 }
