@@ -10461,6 +10461,12 @@ button.bg-dark:focus {
   font-size: calc(100px + 0.390625vw);
 }
 
+.text-about {
+  color: white !important;
+  font-size: 1.5vw;
+  line-height: 1.5vw;
+}
+
 .rectangle {
   width: 180px;
   height: 62px;
@@ -11235,6 +11241,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   width: 90%;
 }
 
+/* txt mobile */
+
 @media only screen and (max-width: 700px) {
 
   .desc {
@@ -11330,6 +11338,18 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   #connect {
     display: none;
   }
+
+  .text-about {
+    font-size: 5vw;
+  }
+  
+  #txt-about-center {
+    line-height: 7vw !important;
+  }
+
+  #about_us {
+    padding-top: 30vw !important;
+  }
   
 }
 
@@ -11410,6 +11430,16 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   #txtScroll {
     display: none;
   }
+
+  .footer {
+    position: fixed;
+    bottom: -90px;
+    margin-bottom: 0px;
+  }
+
+  body {
+    margin-bottom:50px;
+  }
 }
 
 .footer {
@@ -11422,9 +11452,4 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   background-color: #49AEA6;
   color: white;
   text-align: center;
-}
-
-.text-about {
-  color: white !important;
-  font-size: 1.5vw;
 }
