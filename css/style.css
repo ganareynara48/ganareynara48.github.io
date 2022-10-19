@@ -63,17 +63,6 @@ html {
   scroll-behavior: smooth;
 }
 
-div {
-  -ms-overflow-style: none; /* Edge, Internet Explorer */
-  scrollbar-width: none; /* Firefox */
-  overflow-y: scroll;
-}
-
-/* hides scrollbars while allowing to scroll */
-div::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
-}
-
 .fixed {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
