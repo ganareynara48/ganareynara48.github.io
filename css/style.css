@@ -11272,6 +11272,10 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   width: 90%;
 }
 
+#about_us {
+  padding-top: 6vw !important;
+}
+
 /* txt mobile */
 
 @media only screen and (max-width: 700px) {
