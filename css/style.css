@@ -61,12 +61,17 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   scroll-behavior: smooth;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
 }
 
-.html::-webkit-scrollbar {
-  display: none;
+div {
+  -ms-overflow-style: none; /* Edge, Internet Explorer */
+  scrollbar-width: none; /* Firefox */
+  overflow-y: scroll;
+}
+
+/* hides scrollbars while allowing to scroll */
+div::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 .fixed {
