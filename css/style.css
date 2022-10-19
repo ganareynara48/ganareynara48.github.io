@@ -11489,6 +11489,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 .box-square {
   column-count: 3;
   display: flex;
+  margin: auto;
 }
 
 .square {
@@ -11507,7 +11508,45 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   margin-bottom: -108px;
 }
 
-.img-porto-depan {
-  margin-top: -70px;
-  margin-bottom: -108px;
+div.gallery {
+  margin: 0px;
+  /* border: 1px solid #ccc; */
+  float: left;
+  width: 510px;
+}
+
+div.gallery:hover {
+  border: 5px solid black;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  #our-work {
+    margin-top: -55vw !important;
+  }
+
+  #gmbr_atas {
+    margin-top: -150px !important;
+  }
+
+  #gmbr_bawah {
+    margin-bottom: -120px !important;
+  }
+
+  #what-we-do {
+    margin-top: -80px !important;
+  }
+
+  .square {
+    height: 65vw !important;
+  }
+
+  .box-square {
+    margin-top: 5% !important;
+    margin-bottom: -10% !important;
+  }
 }
