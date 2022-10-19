@@ -10393,19 +10393,19 @@ button.bg-dark:focus {
 
 .text-gn-green {
   font-family: "Gotham";
-  color: #49AEA6 !important;
+  color: #49aea6 !important;
   font-size: calc(100px + 0.390625vw);
 }
 
 .text-gn-green1 {
   font-family: "Gotham";
-  color: #49AEA6 !important;
+  color: #49aea6 !important;
   font-size: calc(90px + 0.390625vw);
 }
 
 .text-gn-orange {
   font-family: "Gotham";
-  color: #F1BB00 !important;
+  color: #f1bb00 !important;
   font-size: calc(100px + 0.390625vw);
 }
 
@@ -10422,14 +10422,14 @@ button.bg-dark:focus {
 .text-gn-green2 {
   /* WE */
   font-family: "Gotham";
-  color: #49AEA6 !important;
+  color: #49aea6 !important;
   font-size: calc(160px + 0.390625vw);
 }
 
 .text-gn-orange1 {
   /* DO */
   font-family: "Gotham";
-  color: #F1BB00 !important;
+  color: #f1bb00 !important;
   font-size: calc(160px + 0.390625vw);
 }
 
@@ -10467,14 +10467,44 @@ button.bg-dark:focus {
   line-height: 1.5vw;
 }
 
+.text-square-title {
+  font-weight: bold;
+  color: white !important;
+  font-size: 4vw;
+
+  --b: 0.1em; /* the thickness of the line */
+  --c: #49aea6 !important; /* the color */
+
+  padding-block: var(--b);
+  background: linear-gradient(var(--c) 50%, #49aea6 0) 0%
+      calc(100% - var(--_p, 0%)) / 100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
+      no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.3s var(--_s, 0s) linear,
+    background-size 0.3s calc(0.3s - var(--_s, 0s));
+}
+
+.text-square {
+  color: white !important;
+  font-size: 2vw;
+  line-height: 1.5vw;
+}
+
+.text-square-title:hover {
+  --_p: 100%;
+  --_s: 0.3s;
+}
+
 .rectangle {
   width: 180px;
   height: 62px;
-  color:white;
-  border: 5px solid #FFFFFF;
+  color: white;
+  border: 5px solid #ffffff;
   border-radius: 41px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -10886,7 +10916,7 @@ h5,
 #colorlib-main-nav .colorlib-table .colorlib-table-cell {
   display: table-cell;
   vertical-align: middle;
-  line-height: 100px ;
+  line-height: 100px;
 }
 #colorlib-main-nav .colorlib-nav-toggle {
   position: absolute;
@@ -10983,7 +11013,8 @@ h5,
   color: white;
   padding: 5px 0;
 }
-#colorlib-main-nav ul li a span {  /*ini di menu*/
+#colorlib-main-nav ul li a span {
+  /*ini di menu*/
   color: transparent;
   position: relative;
   padding: 0 10px;
@@ -11244,7 +11275,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 /* txt mobile */
 
 @media only screen and (max-width: 700px) {
-
   .desc {
     /* margin-top: 50%; */
     line-height: 50px !important;
@@ -11253,18 +11283,18 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 
   .text-gn-white {
     font-size: 400%;
-  
+
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
   }
 
   .text-gn-white1 {
     font-size: 400%;
-  
+
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
   }
-  
+
   .text-gn-green {
     font-size: 400%;
   }
@@ -11276,17 +11306,17 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   .text-gn-green1 {
     font-size: 300%;
   }
-  
+
   .text-gn-green2 {
     /* WE */
     font-size: 400%;
   }
-  
+
   .text-gn-orange1 {
     /* DO */
     font-size: 400%;
   }
-  
+
   .text-gn-white-desc {
     font-size: 200%;
   }
@@ -11301,23 +11331,23 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
     white-space: normal;
     text-align: center !important;
   }
-  
+
   .desc-img {
     margin-left: 20px;
     width: 90%;
   }
-  
+
   /* ini untuk nav */
 
   .text-gn-nav {
     font-size: 250%;
     -webkit-text-stroke-width: 0.5px;
   }
-  
+
   .text-gn-nav:hover {
     font-size: 250%;
   }
-  
+
   .text-gn-active {
     font-size: 250%;
   }
@@ -11330,7 +11360,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   .text-footer-white {
     font-size: 310%;
     line-height: 100%;
-  
+
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
   }
@@ -11342,7 +11372,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   .text-about {
     font-size: 5vw;
   }
-  
+
   #txt-about-center {
     line-height: 7vw !important;
   }
@@ -11350,7 +11380,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   #about_us {
     padding-top: 30vw !important;
   }
-  
 }
 
 .navigation {
@@ -11364,7 +11393,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 .navigation li {
-  position:relative;
+  position: relative;
   width: 10px;
   height: 10px;
   background: transparent;
@@ -11374,7 +11403,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   transition: all 0.3s;
 }
 
-.navigation li:hover, .navigation li.selected {
+.navigation li:hover,
+.navigation li.selected {
   transform: scale(1.8);
   background-color: white;
 }
@@ -11401,7 +11431,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   transition: border-width 150ms ease-in-out;
 }
 
-.arrow-down:hover, .arrow-up:hover {
+.arrow-down:hover,
+.arrow-up:hover {
   border-bottom-width: 5px;
   border-right-width: 5px;
 }
@@ -11416,13 +11447,14 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
     height: 20px;
     width: 20px;
   }
-  
+
   .arrow-up {
     height: 20px;
     width: 20px;
   }
-  
-  .arrow-down:hover, .arrow-up:hover {
+
+  .arrow-down:hover,
+  .arrow-up:hover {
     border-bottom-width: 4px;
     border-right-width: 4px;
   }
@@ -11438,7 +11470,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   }
 
   body {
-    margin-bottom:50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -11449,7 +11481,33 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   position: relative;
   left: 0;
   width: 100%;
-  background-color: #49AEA6;
+  background-color: #49aea6;
   color: white;
   text-align: center;
+}
+
+.box-square {
+  column-count: 3;
+  display: flex;
+}
+
+.square {
+  background-color: wheat;
+  height: 25vw;
+  width: 100%;
+  margin-top: -70px;
+  margin-bottom: -108px;
+}
+
+.square2 {
+  background-color: wheat;
+  height: 25vw;
+  width: 100%;
+  margin-top: 107px;
+  margin-bottom: -108px;
+}
+
+.img-porto-depan {
+  margin-top: -70px;
+  margin-bottom: -108px;
 }
