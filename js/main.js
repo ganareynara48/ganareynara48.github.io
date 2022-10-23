@@ -54,3 +54,23 @@ window.addEventListener('scroll', function () {
 		}
 	});
 });
+
+$('#txt_branding').click(function (e) { 
+  e.preventDefault();
+  $('#branding').trigger('click');
+});
+
+$('#txt_socmed').click(function (e) { 
+  e.preventDefault();
+  $('#social_media').trigger('click');
+});
+
+$('#txt_digmar').click(function (e) { 
+  e.preventDefault();
+  $('#digital_marketing').trigger('click');
+});
+
+$('#txt_other').click(function (e) { 
+  e.preventDefault();
+  $('#others').trigger('click');
+});

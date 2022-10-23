@@ -30,9 +30,9 @@
               <ul>
                 <li><a href="/index.html" id="home" class="text-gn-nav">HOME</a></li>
                 <li><a href="/our_work.html" id="our_work" class="text-gn-nav">OUR WORK</a></li>
-                <li><a href="/about_us.html" class="text-gn-active">ABOUT US</a></li>
+                <li><a href="/about_us.html" class="text-gn-nav">ABOUT US</a></li>
                 <li><a href="/what_we_do.html" id="what_we_do" class="text-gn-nav">WHAT WE DO</a></li>
-                <li><a href="/contact_us.html" id="contact_us" class="text-gn-nav">CONTACT US</a></li>
+                <li><a href="#" id="contact_us" class="text-gn-active">CONTACT US</a></li>
               </ul>
             </div>
           </div>
@@ -51,7 +51,7 @@
       </div>
     </header>
 
-    <div id="about-us">
+    <div id="contact_us_page">
 
       <section class="hero-wrap js-fullheight">
         <div class="container px-0">
@@ -59,36 +59,52 @@
           <div class="row no-gutters slider-text js-fullheight align-items-center content-center"
             data-scrollax-parent="true">
             
-            <div class="col-md-12 ftco-animate text-lg-center">
+            <div class="col-md-6 ftco-animate text-lg-left">
 
               <center>
                 <br>
-                <div class="desc" id="about_us">
-                  <a class="text-gn-white">ABOUT </a>
+                <div id="text-contact_us">
+                  <a class="text-gn-white">CONTACT </a>
                   <a class="text-gn-green">US</a>
                   <br />
                 </div>
               </center>
 
-              <div class="desc" id="txt-about-center">
-                <center>
-                  <a class="text-about">We are <b>passionate</b> at what we are doing,</a><br>
-                  <a class="text-about">and as professionals with backgrounds in design and sales,</a> <br>
-                  <a class="text-about">we feel now is the time to put these skills</a><br>
-                  <a class="text-about">in to practice for a greater good.</a>
-                  <br> <br>
-                  <a class="text-about" style="color: #49AEA6 !important;">branding</a><br>
-                  <a class="text-about">We want you to stand out and be recognised for your work and</a><br>
-                  <a class="text-about">it's positive impact on your customers, the planet and animals.</a> <br>
-                  <a class="text-about">How do we get involved? By creating brand visuals</a><br>
-                  <a class="text-about">that will capture your audience.</a>
-                  <br> <br>
-                  <a class="text-about" style="color: #49AEA6 !important;">strategy</a><br>
-                  <a class="text-about">We want you to succeed, so use our knowledge and skills to</a><br>
-                  <a class="text-about">help you create a strategy that will align with your goals across</a> <br>
-                  <a class="text-about">your marketing and online and offline visuals.</a>
-                </center> 
-                <br />
+            </div>
+
+            <div class="col-md-6 ftco-animate text-lg-left">
+
+              <div id="text-contact_form">
+                
+                <!-- nama -->
+                <a class="txt-contact">name:</a> <a class="txt-contact" style="color: #f1bb00 !important;">* </a>
+                <input class="input-contact" id="name" name="name" type="text" minlength="1" placeholder="type ur name"/>
+
+                <!-- email -->
+                <a class="txt-contact">email address:</a> <a class="txt-contact" style="color: #f1bb00 !important;">* </a>
+                <input class="input-contact" id="email" name="email" type="text" minlength="5" placeholder="type ur email"/>
+
+                <!-- kontak -->
+                <a class="txt-contact">phone:</a>
+                <input class="input-contact" id="email" name="email" type="text" minlength="5" placeholder="type ur phone number"/>
+
+                <!-- help -->
+                <a class="txt-contact">how can we help?:</a> <a class="txt-contact" style="color: #f1bb00 !important;">* </a>
+                <input class="input-contact" id="email" name="email" type="text" minlength="5" placeholder="type ur need"/>
+
+                <!-- services -->
+                <a class="txt-contact">services:</a> <a class="txt-contact" style="color: #f1bb00 !important;">* </a>
+                <br> <br> <br>
+                <input type="checkbox" id="branding" name="branding" value="Branding"><a href="#" id="txt_branding" class="txt-contact" style="font-size: 150%"> Branding</a>
+                <br> <br>
+                <input type="checkbox" id="social_media" name="social_media" value="Social Media"><a href="#" id="txt_socmed" class="txt-contact" style="font-size: 150%"> Social Media</a>
+                <br> <br>
+                <input type="checkbox" id="digital_marketing" name="digital_marketing" value="Digital Marketing"><a href="#" id="txt_digmar" class="txt-contact" style="font-size: 150%"> Digital Marketing</a>
+                <br> <br>
+                <input type="checkbox" id="others" name="others" value="Others"><a href="#" id="txt_other" class="txt-contact" style="font-size: 150%"> Others</a>
+                
+                <br> <br> <br>
+                <a href="#" class="button">Submit</a>
               </div>
 
             </div>

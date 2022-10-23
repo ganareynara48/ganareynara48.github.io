@@ -11276,6 +11276,66 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   padding-top: 6vw !important;
 }
 
+#contact_us_page {
+  margin-top: 10vw !important;
+  /* margin-bottom: -5% !important; */
+}
+
+#text-contact_us {
+  margin-top: -65% !important;
+  line-height: 5vw !important;
+  text-align: left !important;
+}
+
+#text-contact_form {
+  /* margin-top: -0% !important; */
+  line-height: 1vw !important;
+  text-align: left !important;
+}
+
+/* text untuk div contact */
+.txt-contact { 
+  font-size: 3vw;
+  color: white !important;
+}
+
+.input-contact {
+  display: block;
+  margin: 2% auto;
+  width: 100%;
+  margin-bottom: 2em;
+  padding: .5em 0;
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 0.5em;
+  font-size: 1.5vw;
+  color: white;
+  /* border: none !important; */
+  background-color: transparent !important;
+}
+
+.input-contact:focus,
+.input-contact:active {
+  border-bottom: 1px solid #f1bb00;
+ box-shadow: none !important;
+ -moz-box-shadow: none !important;
+ -webkit-box-shadow: none !important;
+ outline: none !important;
+}
+
+.button {
+  background-color: #49aea6;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 10%;
+}
+
 /* txt mobile */
 
 @media only screen and (max-width: 700px) {
@@ -11384,6 +11444,36 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   #about_us {
     padding-top: 30vw !important;
   }
+
+  #contact_us_page {
+    margin-top: 80% !important;
+  }
+
+  #text-contact_us {
+    line-height: 10vw !important;
+    text-align: center !important;
+  }
+
+  #text-contact_form {
+    margin-top: -20% !important;
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+  }
+
+  .txt-contact {
+    line-height: 10vw !important;
+    font-size: 9vw !important;
+  }
+
+  .input-contact {
+    line-height: 5vw !important;
+    font-size: 5vw !important;
+  }
+
+  #txt_branding, #txt_socmed, #txt_digmar, #txt_other {
+    font-size: 5vw !important;
+  }
+
 }
 
 .navigation {
