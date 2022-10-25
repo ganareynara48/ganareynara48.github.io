@@ -10497,6 +10497,21 @@ button.bg-dark:focus {
   --_s: 0.3s;
 }
 
+.text-porto-header {
+  font-family: "Gotham";
+  color: white !important;
+  font-size: 4vw;
+  line-height: 3vw;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+.text-porto {
+  color: white !important;
+  font-size: 2vw;
+  line-height: 1.5vw;
+}
+
 .rectangle {
   width: 180px;
   height: 62px;
@@ -11614,6 +11629,22 @@ div.gallery:hover {
 }
 
 div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.porto {
+  margin: 0px;
+  /* border: 1px solid #ccc; */
+  float: left;
+  width: 670px;
+}
+
+div.porto:hover {
+  border: 5px solid black;
+}
+
+div.porto img {
   width: 100%;
   height: auto;
 }
