@@ -10376,7 +10376,7 @@ button.bg-dark:focus {
 .text-gn-white {
   font-family: "Gotham";
   color: transparent !important;
-  font-size: calc(100px + 0.390625vw);
+  font-size: calc(100px + 2vw);
 
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
@@ -10394,7 +10394,7 @@ button.bg-dark:focus {
 .text-gn-green {
   font-family: "Gotham";
   color: #49aea6 !important;
-  font-size: calc(100px + 0.390625vw);
+  font-size: calc(100px + 2vw);
 }
 
 .text-gn-green1 {
@@ -10406,7 +10406,7 @@ button.bg-dark:focus {
 .text-gn-orange {
   font-family: "Gotham";
   color: #f1bb00 !important;
-  font-size: calc(100px + 0.390625vw);
+  font-size: calc(100px + 2vw);
 }
 
 .text-gn-white1 {
@@ -10463,7 +10463,7 @@ button.bg-dark:focus {
 
 .text-about {
   color: white !important;
-  font-size: 1.5vw;
+  font-size: 2.5vw;
   line-height: 1.5vw;
 }
 
@@ -11259,6 +11259,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   cursor: pointer;
   margin-top: 0;
 }
+
 @media (max-width: 767.98px) {
   .colorlib-nav-toggle {
     right: 10px;
@@ -11297,8 +11298,8 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 #text-contact_us {
-  margin-top: -65% !important;
-  line-height: 5vw !important;
+  margin-top: -55% !important;
+  line-height: 500% !important;
   text-align: left !important;
 }
 
@@ -11619,13 +11620,13 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 
 div.gallery {
   margin: 0px;
-  /* border: 1px solid #ccc; */
   float: left;
   width: 510px;
 }
 
 div.gallery:hover {
-  border: 5px solid black;
+  opacity: 0.5;
+  
 }
 
 div.gallery img {
@@ -11635,7 +11636,6 @@ div.gallery img {
 
 div.porto {
   margin: 0px;
-  /* border: 1px solid #ccc; */
   float: left;
   width: 670px;
 }
