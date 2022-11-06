@@ -74,3 +74,56 @@ $('#txt_other').click(function (e) {
   e.preventDefault();
   $('#others').trigger('click');
 });
+
+$("#submit_email").click(function (e) { 
+  e.preventDefault();
+  
+  var name    = $("#name").val();
+  var email   = $("#email").val();
+  var phone   = $("#phone").val();
+  var help    = $("#help").val();
+
+  var branding          = "";
+  var social_media      = "";
+  var digital_marketing = "";
+  var others            = "";
+
+  if ($('#branding').is(':checked')) {
+    branding = $("#branding").val();
+  } else if ($('#social_media').is(':checked')) {
+    social_media = $("#social_media").val();
+  } else if ($('#digital_marketing').is(':checked')) {
+    digital_marketing = $("#digital_marketing").val();
+  } else if ($('#others').is(':checked')) {
+    others = $("#others").val();
+  }
+
+  var postData = {
+    name:name,
+    email:email,
+    phone:phone,
+    help:help,
+
+    branding:branding,
+    social_media:social_media,
+    digital_marketing:digital_marketing,
+    others:others,
+  }
+
+  $.ajax({
+    
+    type: "post",
+    url: "/sendMail.php",
+    data: postData,
+    dataType: "json",
+    success: function (response) {
+      if (response.statusCode==200) {
+        alert("OKE !");
+      } else {
+        alert("Error occured !");
+      }
+    }
+
+  });
+
+});

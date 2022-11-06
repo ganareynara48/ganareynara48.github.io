@@ -11306,6 +11306,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 
 #text-contact_form {
   /* margin-top: -0% !important; */
+  margin-left: 10% !important;
   line-height: 1vw !important;
   text-align: left !important;
 }
