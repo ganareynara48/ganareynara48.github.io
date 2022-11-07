@@ -10413,7 +10413,7 @@ button.bg-dark:focus {
   /* WHAT */
   font-family: "Gotham";
   color: transparent !important;
-  font-size: calc(190px + 0.390625vw);
+  font-size: calc(120px + 0.390625vw);
 
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
@@ -10423,14 +10423,14 @@ button.bg-dark:focus {
   /* WE */
   font-family: "Gotham";
   color: #49aea6 !important;
-  font-size: calc(160px + 0.390625vw);
+  font-size: calc(120px + 0.390625vw);
 }
 
 .text-gn-orange1 {
   /* DO */
   font-family: "Gotham";
   color: #f1bb00 !important;
-  font-size: calc(160px + 0.390625vw);
+  font-size: calc(120px + 0.390625vw);
 }
 
 .text-gn-white-desc {
