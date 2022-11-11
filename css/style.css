@@ -10472,19 +10472,6 @@ button.bg-dark:focus {
   font-weight: bold;
   color: white !important;
   font-size: 4vw;
-
-  --b: 0.1em; /* the thickness of the line */
-  --c: #49aea6 !important; /* the color */
-
-  padding-block: var(--b);
-  background: linear-gradient(var(--c) 50%, #49aea6 0) 0%
-      calc(100% - var(--_p, 0%)) / 100% 200%,
-    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
-      no-repeat;
-  -webkit-background-clip: text, padding-box;
-  background-clip: text, padding-box;
-  transition: 0.3s var(--_s, 0s) linear,
-    background-size 0.3s calc(0.3s - var(--_s, 0s));
 }
 
 .text-square {
@@ -11549,7 +11536,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   border-right-width: 5px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   .navigation {
     right: 20px;
     top: 50%;
@@ -11606,7 +11593,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 
 .square {
   background-color: wheat;
-  height: 25vw;
+  height: 28vw;
   width: 100%;
   margin-top: -70px;
   margin-bottom: -108px;
@@ -11614,7 +11601,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 
 .square2 {
   background-color: wheat;
-  height: 25vw;
+  height: 28vw;
   width: 100%;
   margin-top: 107px;
   margin-bottom: -108px;
@@ -11624,11 +11611,6 @@ div.gallery {
   margin: 0px;
   float: left;
   width: 510px;
-}
-
-div.gallery:hover {
-  opacity: 0.5;
-  
 }
 
 div.gallery img {
@@ -11642,16 +11624,61 @@ div.porto {
   width: 670px;
 }
 
-div.porto:hover {
-  border: 5px solid black;
-}
-
 div.porto img {
   width: 100%;
   height: auto;
 }
 
+.card {
+  position: relative;
+  display: inline-block;
+  border-radius: 0 !important;
+}
+.card .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  border-radius: 0 !important;
+}
+.card:hover .img-top {
+  display: inline;
+}
+
+.img-work {
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+}
+
+.img-work::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+#img-work {
+  margin-left: -5vw !important;
+}
+
+#desc-work {
+  margin-top: -15% !important; 
+  margin-left: 55%;
+}
+
 @media only screen and (max-width: 700px) {
+  #img-work {
+    margin-left: -2vw !important;
+    margin-top: -4vw !important;
+  }
+
+  #desc-work {
+    margin-top: 60% !important;
+    margin-left: 30% !important;
+    margin-right: 50% !important;
+  }
+
   #our-work {
     margin-top: -55vw !important;
   }
