@@ -88,7 +88,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Gotham";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -10373,6 +10373,33 @@ button.bg-dark:focus {
   text-align: center !important;
 }
 
+.text-gn-white-filled {
+  font-family: "Gotham" !important;
+  color: white !important;
+  font-size: calc(60px + 0.390625vw);
+
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+.text-gn-green-filled {
+  font-family: "Gotham" !important;
+  color: #49aea6 !important;
+  font-size: calc(60px + 0.390625vw);
+
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #49aea6;
+}
+
+.text-gn-orange-filled {
+  font-family: "Gotham" !important;
+  color: #f1bb00 !important;
+  font-size: calc(60px + 0.390625vw);
+
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #f1bb00;
+}
+
 .text-gn-white {
   font-family: "Gotham";
   color: transparent !important;
@@ -10465,7 +10492,7 @@ button.bg-dark:focus {
 .text-about {
   color: white !important;
   font-size: 2.5vw;
-  line-height: 1.5vw;
+  line-height: 4vw;
 }
 
 .text-square-title {
@@ -10477,12 +10504,7 @@ button.bg-dark:focus {
 .text-square {
   color: white !important;
   font-size: 2vw;
-  line-height: 1.5vw;
-}
-
-.text-square-title:hover {
-  --_p: 100%;
-  --_s: 0.3s;
+  line-height: 3vw;
 }
 
 .text-porto-header {
@@ -11351,43 +11373,55 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   }
 
   .text-gn-white {
-    font-size: 400%;
+    font-size: 200% !important;
 
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
   }
 
+  .text-gn-white-filled {
+    font-size: 200% !important;
+  }
+
+  .text-gn-green-filled {
+    font-size: 200% !important;
+  }
+
+  .text-gn-orange-filled {
+    font-size: 200% !important;
+  }
+
   .text-gn-white1 {
-    font-size: 400%;
+    font-size: 400% !important;
 
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
   }
 
   .text-gn-green {
-    font-size: 400%;
+    font-size: 200% !important;
   }
 
   .text-gn-orange {
-    font-size: 400%;
+    font-size: 200% !important;
   }
 
   .text-gn-green1 {
-    font-size: 300%;
+    font-size: 400% !important;
   }
 
   .text-gn-green2 {
     /* WE */
-    font-size: 400%;
+    font-size: 400% !important;
   }
 
   .text-gn-orange1 {
     /* DO */
-    font-size: 400%;
+    font-size: 400% !important;
   }
 
   .text-gn-white-desc {
-    font-size: 200%;
+    font-size: 200% !important;
   }
 
   .desc1 {
@@ -11402,8 +11436,12 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   }
 
   .desc-img {
-    margin-left: 20px;
+    margin-left: 9%;
     width: 90%;
+  }
+
+  #img_founder {
+    width: 80% !important;
   }
 
   /* ini untuk nav */
@@ -11444,10 +11482,12 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 
   #txt-about-center {
     line-height: 7vw !important;
+    margin-left: -1vw !important;
   }
 
   #about_us {
     padding-top: 30vw !important;
+    margin-left: -1vw !important;
   }
 
   #contact_us_page {
@@ -11596,7 +11636,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   height: 28vw;
   width: 100%;
   margin-top: -70px;
-  margin-bottom: -108px;
+  margin-bottom: -90px;
 }
 
 .square2 {
@@ -11663,20 +11703,46 @@ div.porto img {
 }
 
 #desc-work {
-  margin-top: -15% !important; 
-  margin-left: 55%;
+  padding-top: -12% !important; 
+  margin-left: 53%;
+  padding-bottom: -12% !important; 
 }
 
 @media only screen and (max-width: 700px) {
+
+  .text-porto-header {
+    font-size: 10vw;
+    line-height: 3vw;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+  }
+  
+  .text-porto {
+    color: white !important;
+    font-size: 7vw;
+    line-height: 1.5vw;
+  }
+
   #img-work {
-    margin-left: -2vw !important;
-    margin-top: -4vw !important;
+    margin-left: 0vw !important;
+    margin-top: 0vw !important;
+  }
+
+  #arrow_back_work {
+    margin-left: -70% !important;
+    margin-top: 40% !important;
+    margin-bottom: -20% !important;
+    font-size: 20px !important;
   }
 
   #desc-work {
-    margin-top: 60% !important;
-    margin-left: 30% !important;
-    margin-right: 50% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20% !important;
+    margin: 0;
+    padding: 0;
   }
 
   #our-work {
@@ -11701,6 +11767,161 @@ div.porto img {
 
   .box-square {
     margin-top: 5% !important;
-    margin-bottom: -10% !important;
+    /* margin-bottom: 1vw !important; */
+  }
+
+  #first_skin, #goban, #whoo_spread {
+    margin-bottom: -5% !important;
+  }
+}
+
+
+/* neko2 */
+/* .typing-demo {
+  width: 50ch;
+  animation: typing 3.5s steps(35, end), blink .9s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2.5rem;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+} */
+
+.css-typing p {
+  border-right: .15em solid #f1bb00;
+  font-family: "Gotham" !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+
+  width: 110ch; /* manually set width */
+  -webkit-animation: type 3.5s steps(40, end);
+  animation: type 3.5s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+  width: 110ch; /* manually set width */
+  opacity: 0;
+  -webkit-animation: type2 3.5s steps(40, end);
+  animation: type2 3.5s steps(40, end);
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+  width: 110ch; /* manually set width */
+  opacity: 0;
+  -webkit-animation: type3 3.5s steps(40, end), blink .5s step-end infinite alternate;
+  animation: type3 3.5s steps(40, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
   }
 }
