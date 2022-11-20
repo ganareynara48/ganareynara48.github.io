@@ -11363,164 +11363,6 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   border-radius: 10%;
 }
 
-/* txt mobile */
-
-@media only screen and (max-width: 700px) {
-  .desc {
-    /* margin-top: 50%; */
-    line-height: 50px !important;
-    margin-left: 20px;
-  }
-
-  .text-gn-white {
-    font-size: 200% !important;
-
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
-  }
-
-  .text-gn-white-filled {
-    font-size: 200% !important;
-  }
-
-  .text-gn-green-filled {
-    font-size: 200% !important;
-  }
-
-  .text-gn-orange-filled {
-    font-size: 200% !important;
-  }
-
-  .text-gn-white1 {
-    font-size: 400% !important;
-
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
-  }
-
-  .text-gn-green {
-    font-size: 200% !important;
-  }
-
-  .text-gn-orange {
-    font-size: 200% !important;
-  }
-
-  .text-gn-green1 {
-    font-size: 400% !important;
-  }
-
-  .text-gn-green2 {
-    /* WE */
-    font-size: 400% !important;
-  }
-
-  .text-gn-orange1 {
-    /* DO */
-    font-size: 400% !important;
-  }
-
-  .text-gn-white-desc {
-    font-size: 200% !important;
-  }
-
-  .desc1 {
-    margin-left: 3vw;
-    font-size: 50%;
-    line-height: 20px !important;
-  }
-
-  .desc-founder {
-    white-space: normal;
-    text-align: center !important;
-  }
-
-  .desc-img {
-    margin-left: 9%;
-    width: 90%;
-  }
-
-  #img_founder {
-    width: 80% !important;
-  }
-
-  /* ini untuk nav */
-
-  .text-gn-nav {
-    font-size: 250%;
-    -webkit-text-stroke-width: 0.5px;
-  }
-
-  .text-gn-nav:hover {
-    font-size: 250%;
-  }
-
-  .text-gn-active {
-    font-size: 250%;
-  }
-
-  /* untuk mengatur jarak break line nav */
-  .text-nav-sum {
-    line-height: 200%;
-  }
-
-  .text-footer-white {
-    font-size: 310%;
-    line-height: 100%;
-
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
-  }
-
-  #connect {
-    display: none;
-  }
-
-  .text-about {
-    font-size: 5vw;
-  }
-
-  #txt-about-center {
-    line-height: 7vw !important;
-    margin-left: -1vw !important;
-  }
-
-  #about_us {
-    padding-top: 30vw !important;
-    margin-left: -1vw !important;
-  }
-
-  #contact_us_page {
-    margin-top: 80% !important;
-  }
-
-  #text-contact_us {
-    line-height: 10vw !important;
-    text-align: center !important;
-  }
-
-  #text-contact_form {
-    margin-top: -20% !important;
-    margin-left: 5vw !important;
-    margin-right: 5vw !important;
-  }
-
-  .txt-contact {
-    line-height: 10vw !important;
-    font-size: 9vw !important;
-  }
-
-  .input-contact {
-    line-height: 5vw !important;
-    font-size: 5vw !important;
-  }
-
-  #txt_branding, #txt_socmed, #txt_digmar, #txt_other {
-    font-size: 5vw !important;
-  }
-
-}
-
 .navigation {
   margin: 0;
   padding: 0;
@@ -11708,7 +11550,164 @@ div.porto img {
   padding-bottom: -12% !important; 
 }
 
-@media only screen and (max-width: 700px) {
+/* txt mobile */
+@media only screen and (max-width: 600px) {
+  .desc {
+    /* margin-top: 50%; */
+    line-height: 50px !important;
+    margin-left: 20px;
+  }
+
+  .text-gn-white {
+    font-size: 200% !important;
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+  }
+
+  .text-gn-white-filled {
+    font-size: 200% !important;
+  }
+
+  .text-gn-green-filled {
+    font-size: 200% !important;
+  }
+
+  .text-gn-orange-filled {
+    font-size: 200% !important;
+  }
+
+  .text-gn-white1 {
+    font-size: 400% !important;
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+  }
+
+  .text-gn-green {
+    font-size: 200% !important;
+  }
+
+  .text-gn-orange {
+    font-size: 200% !important;
+  }
+
+  .text-gn-green1 {
+    font-size: 400% !important;
+  }
+
+  .text-gn-green2 {
+    /* WE */
+    font-size: 400% !important;
+  }
+
+  .text-gn-orange1 {
+    /* DO */
+    font-size: 400% !important;
+  }
+
+  .text-gn-white-desc {
+    font-size: 200% !important;
+  }
+
+  .desc1 {
+    margin-left: 3vw;
+    font-size: 50%;
+    line-height: 20px !important;
+  }
+
+  .desc-founder {
+    white-space: normal;
+    text-align: center !important;
+  }
+
+  .desc-img {
+    margin-left: 9%;
+    width: 90%;
+  }
+
+  #img_founder {
+    width: 80% !important;
+  }
+
+  /* ini untuk nav */
+
+  .text-gn-nav {
+    font-size: 250%;
+    -webkit-text-stroke-width: 0.5px;
+  }
+
+  .text-gn-nav:hover {
+    font-size: 250%;
+  }
+
+  .text-gn-active {
+    font-size: 250%;
+  }
+
+  /* untuk mengatur jarak break line nav */
+  .text-nav-sum {
+    line-height: 200%;
+  }
+
+  .text-footer-white {
+    font-size: 310%;
+    line-height: 100%;
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+  }
+
+  #connect {
+    display: none;
+  }
+
+  .text-about {
+    font-size: 5vw;
+  }
+
+  #txt-about-center {
+    line-height: 7vw !important;
+    margin-left: -1vw !important;
+  }
+
+  #about_us {
+    padding-top: 30vw !important;
+    margin-left: -1vw !important;
+  }
+
+  #contact_us_page {
+    margin-top: 80% !important;
+  }
+
+  #text-contact_us {
+    line-height: 10vw !important;
+    text-align: center !important;
+  }
+
+  #text-contact_form {
+    margin-top: -20% !important;
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+  }
+
+  .txt-contact {
+    line-height: 10vw !important;
+    font-size: 9vw !important;
+  }
+
+  .input-contact {
+    line-height: 5vw !important;
+    font-size: 5vw !important;
+  }
+
+  #txt_branding, #txt_socmed, #txt_digmar, #txt_other {
+    font-size: 5vw !important;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
 
   .text-porto-header {
     font-size: 10vw;
@@ -11775,28 +11774,7 @@ div.porto img {
   }
 }
 
-
 /* neko2 */
-/* .typing-demo {
-  width: 50ch;
-  animation: typing 3.5s steps(35, end), blink .9s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-size: 2.5rem;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-} */
 
 .css-typing p {
   border-right: .15em solid #f1bb00;
