@@ -10471,7 +10471,8 @@ button.bg-dark:focus {
 .text-gn-nav {
   font-family: "Gotham";
   color: transparent !important;
-  font-size: calc(100px + 0.390625vw);
+  font-size: calc(70px + 0.390625vw);
+  line-height: 6vw;
 
   -webkit-text-stroke-width: 2px !important;
   -webkit-text-stroke-color: white !important;
@@ -10479,14 +10480,19 @@ button.bg-dark:focus {
 
 .text-gn-nav:hover {
   font-family: "Gotham";
+  line-height: 6vw;
   color: white !important;
-  font-size: calc(100px + 0.390625vw);
+  font-size: calc(70px + 0.390625vw);
 }
 
 .text-gn-active {
   font-family: "Gotham";
+  line-height: 6vw;
   color: white !important;
-  font-size: calc(100px + 0.390625vw);
+  font-size: calc(70px + 0.390625vw);
+
+  -webkit-text-stroke-width: 2px !important;
+  -webkit-text-stroke-color: white !important;
 }
 
 .text-about {
@@ -10531,6 +10537,10 @@ button.bg-dark:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.about_us_page {
+  padding-bottom: 38vw !important;
 }
 
 @media only screen and (min-width: 576px) {
@@ -11521,11 +11531,11 @@ div.porto img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 3;
   border-radius: 0 !important;
 }
 .card:hover .img-top {
-  display: inline;
+  display: inline-block;
 }
 
 .img-work {
@@ -11776,7 +11786,7 @@ div.porto img {
 
 /* neko2 */
 
-.css-typing p {
+/* .css-typing p {
   border-right: .15em solid #f1bb00;
   font-family: "Gotham" !important;
   white-space: nowrap;
@@ -11784,7 +11794,7 @@ div.porto img {
 }
 .css-typing p:nth-child(1) {
 
-  width: 110ch; /* manually set width */
+  width: 110ch;
   -webkit-animation: type 3.5s steps(40, end);
   animation: type 3.5s steps(40, end);
   -webkit-animation-fill-mode: forwards;
@@ -11792,7 +11802,7 @@ div.porto img {
 }
 
 .css-typing p:nth-child(2) {
-  width: 110ch; /* manually set width */
+  width: 110ch;
   opacity: 0;
   -webkit-animation: type2 3.5s steps(40, end);
   animation: type2 3.5s steps(40, end);
@@ -11803,7 +11813,7 @@ div.porto img {
 }
 
 .css-typing p:nth-child(3) {
-  width: 110ch; /* manually set width */
+  width: 110ch;
   opacity: 0;
   -webkit-animation: type3 3.5s steps(40, end), blink .5s step-end infinite alternate;
   animation: type3 3.5s steps(40, end), blink .5s step-end infinite alternate;
@@ -11902,4 +11912,4 @@ div.porto img {
   50% {
     border-color: tranparent;
   }
-}
+} */
