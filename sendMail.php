@@ -1,12 +1,4 @@
-<?php
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-include('./phpmailer/Exception.php');
-include('./phpmailer/PHPMailer.php');
-include('./phpmailer/SMTP.php');
-
+<?php     
 
 $name   = ($_POST['name']!=NULL) ? $_POST['name'] : "";
 $email  = ($_POST['email']!=NULL) ? $_POST['email'] : "";
@@ -19,28 +11,14 @@ $digital_marketing  = ($_POST['digital_marketing']!=NULL) ? $_POST['digital_mark
 $others             = ($_POST['others']!=NULL) ? $_POST['others'] : "";
 
 
-$subjek     = "I Need Your Help~";
-$pesan      = "Need : " . $help . "\n" .
-                "Services : " . $branding . $social_media . $digital_marketing . $others;  
-// $headers    = "From :" . $email;
+$subject     = "I Need Your Help~";
+$message      = "Need : " . $help . "\n" .
+                "Services : " . $branding . $social_media . $digital_marketing . $others . "\n" .
+                "Name : " . $name . "\n" .
+                "Phone : " . $name . "\n";  
 
-$mail = new PHPMailer;
-$mail->isSMTP();
-$mail->Host = 'smtp.gmail.com';
-$mail->Username = 'thrivedesignagency@gmail.com'; // Email Pengirim
-$mail->Password = 'ABCdef123'; // Isikan dengan Password email pengirim
-$mail->Port = 465;
-$mail->SMTPAuth = true;
-$mail->SMTPSecure = 'ssl';
-// $mail->SMTPDebug = 2; // Aktifkan untuk melakukan debugging
-$mail->Subject = $subjek;
-$mail->Content = $pesan;
-$mail->setFrom('thrivedesignagency@gmail.com', $name);
-$mail->addAddress('ganareynara@gmail.com', '');
-$send = $mail->Send();
+$to_email = 'admin@thrivedesignagency.com';
+$headers = 'From: ' . $email . ' Order is cooming from web';
 
-if ($send) {
-    echo json_encode(array("statusCode"=>200));
-} else {
-    echo json_encode(array("statusCode"=>402));
-}
+mail($to_email,$subject,$message,$headers);
+?>

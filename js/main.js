@@ -120,7 +120,7 @@ $("#submit_email").click(function (e) {
       if (response.statusCode==200) {
         alert("OKE !");
       } else {
-        alert("Error occured !");
+        console.log(response);
       }
     }
 
