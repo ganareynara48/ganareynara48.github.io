@@ -13,7 +13,7 @@ $others             = ($_POST['others']!=NULL) ? $_POST['others'] : "";
 
 $subject     = "I Need Your Help~";
 $message      = "Need : " . $help . "\n" .
-                "Services : " . $branding . $social_media . $digital_marketing . $others . "\n" .
+                "Services : " . $branding . " " . $social_media . " " . $digital_marketing . " " .$others . "\n" .
                 "Name : " . $name . "\n" .
                 "Phone : " . $name . "\n";  
 
