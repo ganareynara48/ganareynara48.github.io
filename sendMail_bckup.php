@@ -1,6 +1,12 @@
 <?php
 
-include('./phpmailer/classes/class.phpmailer.php');
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+include('./phpmailer/Exception.php');
+include('./phpmailer/PHPMailer.php');
+include('./phpmailer/SMTP.php');
+
 
 $name   = ($_POST['name']!=NULL) ? $_POST['name'] : "";
 $email  = ($_POST['email']!=NULL) ? $_POST['email'] : "";
@@ -20,28 +26,21 @@ $headers    = "From :" . $email;
 
 $mail = new PHPMailer;
 
-$mail->IsSMTP();
-
-$mail->SMTPSecure = 'ssl';
-
-$mail->Host = "smtp.gmail.com"; //hostname masing-masing provider email
-$mail->SMTPDebug = 2;
+$mail = new PHPMailer;
+$mail->isSMTP();
+$mail->Host = 'smtp.gmail.com';
+$mail->Username = 'thrivedesignagency@gmail.com'; // Email Pengirim
+$mail->Password = 'ABCdef123'; // Isikan dengan Password email pengirim
 $mail->Port = 465;
 $mail->SMTPAuth = true;
+$mail->SMTPSecure = 'ssl';
+// $mail->SMTPDebug = 2; // Aktifkan untuk melakukan debugging
+$mail->setFrom('thrivedesignagency@gmail.com', $name);
+$mail->addAddress('ganareynara@gmail.com', '');
+$send = $mail->Send();
 
-$mail->Timeout = 60; // timeout pengiriman (dalam detik)
-$mail->SMTPKeepAlive = true; 
-
-$mail->Username = "thrivedesignagency@gmail.com"; //user email
-$mail->Password = "Gana6699"; //password email
-
-$mail->SetFrom($email,"From : "); //set email pengirim
-
-$mail->Subject = $subjek; //subyek email
-
-$mail->AddAddress($email,"To : "); //tujuan email
-
-$mail->MsgHTML($pesan);
-
-if($mail->Send()) echo json_encode(array("statusCode"=>200));
-else echo "Failed to sending message";
+if ($send) {
+    echo json_encode(array("statusCode"=>200));
+} else {
+    echo json_encode(array("statusCode"=>402));
+}
