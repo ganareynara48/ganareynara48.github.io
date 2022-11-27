@@ -88,24 +88,28 @@ $("#submit_email").click(function (e) {
   var digital_marketing = "";
   var others            = "";
 
-  if ($('#branding').is(':checked')) {
+  if ( $('#branding').is(':checked') ) {
+    branding = $("#branding").val();
+  } else if ( $('#branding').is(':checked') && $('#social_media').is(':checked') ) {
     branding = $("#branding").val();
     social_media = $("#social_media").val();
+  } else if ( $('#branding').is(':checked') && $('#digital_marketing').is(':checked') ) {
+    branding = $("#branding").val();
     digital_marketing = $("#digital_marketing").val();
+  } else if ( $('#branding').is(':checked') && $('#others').is(':checked') ) {
+    branding = $("#branding").val();
     others = $("#others").val();
-  } else if ($('#social_media').is(':checked')) {
-    branding = $("#branding").val();
+  } else if ( $('#social_media').is(':checked') ) {
+    social_media = $("#social_media").val();
+  }  else if ( $('#social_media').is(':checked') && $('#digital_marketing').is(':checked') ) {
     social_media = $("#social_media").val();
     digital_marketing = $("#digital_marketing").val();
+  } else if ( $('#social_media').is(':checked') && $('#others').is(':checked') ) {
+    social_media = $("#social_media").val();
     others = $("#others").val();
   } else if ($('#digital_marketing').is(':checked')) {
-    branding = $("#branding").val();
-    social_media = $("#social_media").val();
     digital_marketing = $("#digital_marketing").val();
-    others = $("#others").val();
-  } else if ($('#others').is(':checked')) {
-    branding = $("#branding").val();
-    social_media = $("#social_media").val();
+  } else if ( $('#digital_marketing').is(':checked') && $('#others').is(':checked') ) {
     digital_marketing = $("#digital_marketing").val();
     others = $("#others").val();
   } else {
