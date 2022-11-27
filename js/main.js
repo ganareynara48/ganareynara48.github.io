@@ -83,50 +83,19 @@ $("#submit_email").click(function (e) {
   var phone   = $("#phone").val();
   var help    = $("#help").val();
 
-  var branding          = "";
-  var social_media      = "";
-  var digital_marketing = "";
-  var others            = "";
+  var favorite = [];
+  $.each($("input[name='services']:checked"), function(){
+      favorite.push($(this).val());
+  });
 
-  if ( $('#branding').is(':checked') ) {
-    branding = $("#branding").val();
-  } else if ( $('#branding').is(':checked') && $('#social_media').is(':checked') ) {
-    branding = $("#branding").val();
-    social_media = $("#social_media").val();
-  } else if ( $('#branding').is(':checked') && $('#digital_marketing').is(':checked') ) {
-    branding = $("#branding").val();
-    digital_marketing = $("#digital_marketing").val();
-  } else if ( $('#branding').is(':checked') && $('#others').is(':checked') ) {
-    branding = $("#branding").val();
-    others = $("#others").val();
-  } else if ( $('#social_media').is(':checked') ) {
-    social_media = $("#social_media").val();
-  }  else if ( $('#social_media').is(':checked') && $('#digital_marketing').is(':checked') ) {
-    social_media = $("#social_media").val();
-    digital_marketing = $("#digital_marketing").val();
-  } else if ( $('#social_media').is(':checked') && $('#others').is(':checked') ) {
-    social_media = $("#social_media").val();
-    others = $("#others").val();
-  } else if ($('#digital_marketing').is(':checked')) {
-    digital_marketing = $("#digital_marketing").val();
-  } else if ( $('#digital_marketing').is(':checked') && $('#others').is(':checked') ) {
-    digital_marketing = $("#digital_marketing").val();
-    others = $("#others").val();
-  } else {
-    alert("Please choose some services :)");
-    return false;
-  }
+  var services = favorite.join(", ");
 
   var postData = {
     name:name,
     email:email,
     phone:phone,
     help:help,
-
-    branding:branding,
-    social_media:social_media,
-    digital_marketing:digital_marketing,
-    others:others,
+    services:services
   }
 
   $.ajax({
