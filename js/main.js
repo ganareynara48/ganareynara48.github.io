@@ -90,12 +90,27 @@ $("#submit_email").click(function (e) {
 
   if ($('#branding').is(':checked')) {
     branding = $("#branding").val();
-  } else if ($('#social_media').is(':checked')) {
     social_media = $("#social_media").val();
-  } else if ($('#digital_marketing').is(':checked')) {
     digital_marketing = $("#digital_marketing").val();
-  } else if ($('#others').is(':checked')) {
     others = $("#others").val();
+  } else if ($('#social_media').is(':checked')) {
+    branding = $("#branding").val();
+    social_media = $("#social_media").val();
+    digital_marketing = $("#digital_marketing").val();
+    others = $("#others").val();
+  } else if ($('#digital_marketing').is(':checked')) {
+    branding = $("#branding").val();
+    social_media = $("#social_media").val();
+    digital_marketing = $("#digital_marketing").val();
+    others = $("#others").val();
+  } else if ($('#others').is(':checked')) {
+    branding = $("#branding").val();
+    social_media = $("#social_media").val();
+    digital_marketing = $("#digital_marketing").val();
+    others = $("#others").val();
+  } else {
+    alert("Please choose some services :)");
+    return false;
   }
 
   var postData = {
@@ -124,7 +139,11 @@ $("#submit_email").click(function (e) {
         $("#phone").val("");
         $("#help").val("");
 
-        $(":checked").attr('checked', false);
+        $("#branding").prop("checked", false);
+        $("#social_media").prop("checked", false);
+        $("#digital_marketing").prop("checked", false);
+        $("#others").prop("checked", false);
+
       } else {
         alert("Email wasn't send~");
       }
