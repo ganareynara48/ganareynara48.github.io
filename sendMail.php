@@ -18,7 +18,9 @@ $message      = "Need : " . $help . "\n" .
                 "Phone : " . $name . "\n";  
 
 $to_email = 'admin@thrivedesignagency.com';
-$headers = 'From: ' . $email . ' Order is cooming from web';
+$headers = 'From: ' . $email;
 
 mail($to_email,$subject,$message,$headers);
+
+echo json_encode(array("statusCode"=>200));
 ?>

@@ -118,9 +118,15 @@ $("#submit_email").click(function (e) {
     dataType: "json",
     success: function (response) {
       if (response.statusCode==200) {
-        alert("OKE !");
+        alert("Email was send~");
+        $("#name").val("");
+        $("#email").val("");
+        $("#phone").val("");
+        $("#help").val("");
+
+        $(":checked").attr('checked', false);
       } else {
-        console.log(response);
+        alert("Email wasn't send~");
       }
     }
 
