@@ -11331,7 +11331,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 }
 
 /* text untuk div contact */
-.txt-contact { 
+.txt-contact {
   font-size: 3vw;
   color: white !important;
 }
@@ -11341,7 +11341,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   margin: 2% auto;
   width: 100%;
   margin-bottom: 2em;
-  padding: .5em 0;
+  padding: 0.5em 0;
   border: none;
   border-bottom: 1px solid white;
   padding-bottom: 0.5em;
@@ -11354,10 +11354,10 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
 .input-contact:focus,
 .input-contact:active {
   border-bottom: 1px solid #f1bb00;
- box-shadow: none !important;
- -moz-box-shadow: none !important;
- -webkit-box-shadow: none !important;
- outline: none !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  outline: none !important;
 }
 
 .button {
@@ -11539,15 +11539,15 @@ div.porto img {
 }
 
 .img-work {
-    position: fixed;
-    overflow-y: scroll;
-    top: 0;
-    bottom: 0;
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
 }
 
 .img-work::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 #img-work {
@@ -11555,9 +11555,9 @@ div.porto img {
 }
 
 #desc-work {
-  padding-top: -12% !important; 
+  padding-top: -12% !important;
   margin-left: 53%;
-  padding-bottom: -12% !important; 
+  padding-bottom: -12% !important;
 }
 
 /* txt mobile */
@@ -11711,21 +11711,22 @@ div.porto img {
     font-size: 5vw !important;
   }
 
-  #txt_branding, #txt_socmed, #txt_digmar, #txt_other {
+  #txt_branding,
+  #txt_socmed,
+  #txt_digmar,
+  #txt_other {
     font-size: 5vw !important;
   }
-
 }
 
 @media only screen and (max-width: 600px) {
-
   .text-porto-header {
     font-size: 10vw;
     line-height: 3vw;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
   }
-  
+
   .text-porto {
     color: white !important;
     font-size: 7vw;
@@ -11779,33 +11780,37 @@ div.porto img {
     /* margin-bottom: 1vw !important; */
   }
 
-  #first_skin, #goban, #whoo_spread {
+  #first_skin,
+  #goban,
+  #whoo_spread {
     margin-bottom: -5% !important;
   }
 }
 
 /* neko2 */
 
-/* .css-typing p {
-  border-right: .15em solid #f1bb00;
-  font-family: "Gotham" !important;
+.css-typing p {
+  /* border-right: .15em solid #f1bb00; */
+  /* font-family: "Gotham" !important; */
   white-space: nowrap;
+  line-height: 300%;
   overflow: hidden;
 }
+
 .css-typing p:nth-child(1) {
 
-  width: 110ch;
-  -webkit-animation: type 3.5s steps(40, end);
-  animation: type 3.5s steps(40, end);
+  width: 100vw;
+  -webkit-animation: type 3.5s steps(50, end);
+  animation: type 3.5s steps(50, end);
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .css-typing p:nth-child(2) {
-  width: 110ch;
+  width: 100vw;
   opacity: 0;
-  -webkit-animation: type2 3.5s steps(40, end);
-  animation: type2 3.5s steps(40, end);
+  -webkit-animation: type2 3.5s steps(50, end);
+  animation: type2 3.5s steps(50, end);
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
@@ -11813,10 +11818,10 @@ div.porto img {
 }
 
 .css-typing p:nth-child(3) {
-  width: 110ch;
+  width: 100vw;
   opacity: 0;
-  -webkit-animation: type3 3.5s steps(40, end), blink .5s step-end infinite alternate;
-  animation: type3 3.5s steps(40, end), blink .5s step-end infinite alternate;
+  -webkit-animation: type3 3.5s steps(50, end), blink .5s step-end infinite alternate;
+  animation: type3 3.5s steps(50, end), blink .5s step-end infinite alternate;
   -webkit-animation-delay: 7s;
   animation-delay: 7s;
   -webkit-animation-fill-mode: forwards;
@@ -11912,4 +11917,11 @@ div.porto img {
   50% {
     border-color: tranparent;
   }
-} */
+}
+
+@media only screen and (max-width: 600px) {
+  .css-typing p {
+    white-space: inherit;
+    overflow: hidden;
+  }
+}
