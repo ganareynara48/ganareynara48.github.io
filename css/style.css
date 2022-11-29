@@ -11788,10 +11788,10 @@ div.porto img {
 }
 
 /* neko2 */
-
+/* 
 .css-typing p {
-  /* border-right: .15em solid #f1bb00; */
-  /* font-family: "Gotham" !important; */
+  border-right: .15em solid #f1bb00;
+  font-family: "Gotham" !important;
   white-space: nowrap;
   line-height: 300%;
   overflow: hidden;
@@ -11924,7 +11924,7 @@ div.porto img {
     white-space: inherit;
     overflow: hidden;
   }
-}
+} */
 
 /* slide left */
 div.slide-left {
@@ -11932,11 +11932,11 @@ div.slide-left {
   overflow:hidden;
 }
 div.slide-left p {
-  animation: slide-left 10s;
+  animation: slide-left 2s;
 }
 
 div.slide-left img {
-  animation: slide-left 10s;
+  animation: slide-left 2s;
 }
 
 @keyframes slide-left {
@@ -11957,7 +11957,7 @@ div.slide-right {
   overflow:hidden;
 }
 div.slide-right p {
-  animation: 5s slide-right;
+  animation: 2s slide-right;
 }
 
 @keyframes slide-right {
@@ -11978,7 +11978,7 @@ div.slide-down {
   overflow:hidden;
 }
 div.slide-down p {
-  animation: 3s slide-down;
+  animation: 1s slide-down;
   margin-top:0%;
 }
 
@@ -12001,11 +12001,11 @@ div.slide-down img {
 
 /* top to bottom */
 div.slide-up {
-  height:200px;
-  overflow:hidden;
+  height:300px;
+  /* overflow:hidden; */
 }
 div.slide-up p {
-  animation: 5s slide-up;
+  animation: 2s slide-up;
   margin-top:0%;
 }
 
