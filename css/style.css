@@ -11799,7 +11799,7 @@ div.porto img {
 
 .css-typing p:nth-child(1) {
 
-  width: 100vw;
+  width: 65vw;
   -webkit-animation: type 3.5s steps(50, end);
   animation: type 3.5s steps(50, end);
   -webkit-animation-fill-mode: forwards;
@@ -11807,7 +11807,7 @@ div.porto img {
 }
 
 .css-typing p:nth-child(2) {
-  width: 100vw;
+  width: 75vw;
   opacity: 0;
   -webkit-animation: type2 3.5s steps(50, end);
   animation: type2 3.5s steps(50, end);
@@ -11818,7 +11818,7 @@ div.porto img {
 }
 
 .css-typing p:nth-child(3) {
-  width: 100vw;
+  width: 65vw;
   opacity: 0;
   -webkit-animation: type3 3.5s steps(50, end), blink .5s step-end infinite alternate;
   animation: type3 3.5s steps(50, end), blink .5s step-end infinite alternate;
