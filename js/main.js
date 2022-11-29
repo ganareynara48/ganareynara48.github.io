@@ -125,3 +125,35 @@ $("#submit_email").click(function (e) {
   });
 
 });
+
+function slideDown() {
+  $( "#animHalaman2" ).addClass( "slide-down" );
+}
+
+function toHalaman1 () { 
+  $( "#animHalaman2" ).removeClass( "slide-down" );
+}
+
+function toHalaman2 () { 
+  $( "#animHalaman3a" ).removeClass( "slide-right" );
+  $( "#animHalaman3b" ).removeClass( "slide-left" );
+
+  $( "#animHalaman2" ).addClass( "slide-down" );
+}
+
+function toHalaman3 () { 
+  $( "#animHalaman2" ).removeClass( "slide-down" );
+  $( "#animHalaman4a" ).removeClass( "slide-up" );
+  $( "#animHalaman4b" ).removeClass( "slide-down" );
+
+  $( "#animHalaman3a" ).addClass( "slide-right" );
+  $( "#animHalaman3b" ).addClass( "slide-left" );
+}
+
+function toHalaman4 () { 
+  $( "#animHalaman3a" ).removeClass( "slide-right" );
+  $( "#animHalaman3b" ).removeClass( "slide-left" );
+
+  $( "#animHalaman4a" ).addClass( "slide-up" );
+  $( "#animHalaman4b" ).addClass( "slide-down" );
+}
