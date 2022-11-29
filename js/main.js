@@ -27,13 +27,13 @@
   burgerMenu();
 })(jQuery);
 
-$(window).scroll(function () {
-  var sticky = $("#header"),
-    scroll = $(window).scrollTop();
+// $(window).scroll(function () {
+//   var sticky = $("#header"),
+//     scroll = $(window).scrollTop();
 
-  if (scroll >= 100) sticky.addClass("fixed");
-  else sticky.removeClass("fixed");
-});
+//   if (scroll >= 100) sticky.addClass("fixed");
+//   else sticky.removeClass("fixed");
+// });
 
 const sections		= document.querySelectorAll('section');
 const windowHeight 	= window.innerHeight;
@@ -128,9 +128,12 @@ $("#submit_email").click(function (e) {
 
 function slideDown() {
   $( "#animHalaman2" ).addClass( "slide-down" );
+  $( "#landingpage" ).removeClass( "css-typing" );
 }
 
 function toHalaman1 () { 
+  $( "#landingpage" ).addClass( "css-typing" );
+
   $( "#animHalaman2" ).removeClass( "slide-down" );
 }
 
@@ -152,7 +155,7 @@ function toHalaman3 () {
 
 function toHalaman4 () { 
   $( "#animHalaman3a" ).removeClass( "slide-right" );
-  $( "#animHalaman3b" ).removeClass( "slide-left" );
+  $( "#animHalaman3b" ).removeClass( "slide-right" );
 
   $( "#animHalaman4a" ).addClass( "slide-up" );
   $( "#animHalaman4b" ).addClass( "slide-down" );

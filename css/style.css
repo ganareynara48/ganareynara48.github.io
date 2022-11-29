@@ -11799,7 +11799,7 @@ div.porto img {
 
 .css-typing p:nth-child(1) {
 
-  width: 65vw;
+  width: 90vw;
   -webkit-animation: type 3.5s steps(50, end);
   animation: type 3.5s steps(50, end);
   -webkit-animation-fill-mode: forwards;
@@ -11807,7 +11807,7 @@ div.porto img {
 }
 
 .css-typing p:nth-child(2) {
-  width: 75vw;
+  width: 90vw;
   opacity: 0;
   -webkit-animation: type2 3.5s steps(50, end);
   animation: type2 3.5s steps(50, end);
@@ -11818,7 +11818,7 @@ div.porto img {
 }
 
 .css-typing p:nth-child(3) {
-  width: 65vw;
+  width: 90vw;
   opacity: 0;
   -webkit-animation: type3 3.5s steps(50, end), blink .5s step-end infinite alternate;
   animation: type3 3.5s steps(50, end), blink .5s step-end infinite alternate;
@@ -11978,7 +11978,7 @@ div.slide-down {
   overflow:hidden;
 }
 div.slide-down p {
-  animation: 2s slide-down;
+  animation: 3s slide-down;
   margin-top:0%;
 }
 
