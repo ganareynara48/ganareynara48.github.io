@@ -41,14 +41,22 @@
 
     </nav>
 
-    <header id="header">
+    <header id="header" style="background-color: transparent">
       <div class="container">
         <div class="colorlib-navbar-brand">
           <a href="/">
-          <img class="colorlib-logo" src="./images/thrive_logo.svg" alt="" width="20%" />
+            <img
+              class="colorlib-logo"
+              src="./images/thrive_logo.svg"
+              alt=""
+              width="20%"
+              id="logo_thrive"
+            />
           </a>
         </div>
-        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+        <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"
+          ><i></i
+        ></a>
       </div>
     </header>
 
@@ -62,13 +70,13 @@
             
             <div class="col-md-6 ftco-animate text-lg-left">
 
-              <div class="slide-up">
+              <div class="slide-up heartbeat">
                 <center>
                   <br>
                   <div id="text-contact_us">
                     <p>
-                      <br><br>
-                      <a class="text-gn-white">CONTACT </a>
+                      <br>
+                      <a class="text-gn-white">CONTACT</a><br>
                       <a class="text-gn-green">US</a>
                       <br />
                     </p>
@@ -122,6 +130,14 @@
       </section>
 
     </div>
+
+    <ul class="navigation" style="display: none">
+      <li
+        class="selected"
+        onclick="location.href='index.html#halaman1';"
+        style="cursor: pointer"
+      ></li>
+    </ul>
 
     <br> <br> <br> <br> <br>
     <footer class="footer">

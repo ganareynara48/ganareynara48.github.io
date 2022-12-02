@@ -27,13 +27,19 @@
   burgerMenu();
 })(jQuery);
 
-// $(window).scroll(function () {
-//   var sticky = $("#header"),
-//     scroll = $(window).scrollTop();
+$(window).scroll(function () {
+  var sticky = $("#header"),
+    scroll = $(window).scrollTop();
 
-//   if (scroll >= 100) sticky.addClass("fixed");
-//   else sticky.removeClass("fixed");
-// });
+  if (scroll >= 100) {
+    document.getElementById("logo_thrive").style.display = "none";
+    sticky.addClass("fixed");
+  }
+  else {
+    document.getElementById("logo_thrive").style.display = "block";
+    sticky.removeClass("fixed");
+  } 
+});
 
 const sections		= document.querySelectorAll('section');
 const windowHeight 	= window.innerHeight;
@@ -138,7 +144,8 @@ function toHalaman1 () {
 }
 
 function toHalaman2 () { 
-  $( "#animHalaman3a" ).removeClass( "slide-right" );
+  $( "#animHalaman3a" ).removeClass( "roll-in-left" );
+  $( "#animHalaman3b" ).removeClass( "roll-in-right" );
 
   $( "#animHalaman2" ).addClass( "slide-down" );
 }
@@ -148,7 +155,8 @@ function toHalaman3 () {
   $( "#animHalaman4a" ).removeClass( "slide-up" );
   $( "#animHalaman4b" ).removeClass( "slide-down" );
 
-  $( "#animHalaman3a" ).addClass( "slide-right" );
+  $( "#animHalaman3a" ).addClass( "roll-in-left" );
+  $( "#animHalaman3b" ).addClass( "roll-in-right" );
 }
 
 function toHalaman4 () { 
