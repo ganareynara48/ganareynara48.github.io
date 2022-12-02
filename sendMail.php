@@ -13,7 +13,7 @@ $message      = "Need : " . $help . "\n" .
                 "Name : " . $name . "\n" .
                 "Phone : " . $phone . "\n";  
 
-$to_email = 'admin@thrivedesignagency.com';
+$to_email = 'contact@thrivedesignagency.com';
 $headers = 'From: ' . $email;
 
 mail($to_email,$subject,$message,$headers);
