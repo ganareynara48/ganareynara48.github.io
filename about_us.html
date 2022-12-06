@@ -33,7 +33,7 @@
       <nav
         id="colorlib-main-nav"
         role="navigation"
-        style="background-color: #49aea6 !important"
+        style="background-image: url('./images/mosaic/bgnav.svg');background-repeat: no-repeat; max-width: 100%; height: auto; background-size: cover;"
       >
         <a
           href="#"
@@ -47,9 +47,7 @@
             <div class="row no-gutters">
               <div class="col-md-12 text-xl-center text-nav-sum">
                 <ul>
-                  <li>
-                    <a href="/index.html" id="home" class="text-gn-nav">HOME</a>
-                  </li>
+                  <li><a href="/" id="home" class="text-gn-nav">HOME</a></li>
                   <li>
                     <a href="/our_work.html" id="our_work" class="text-gn-nav"
                       >OUR WORK</a
@@ -100,7 +98,7 @@
       </header>
 
       <div class="about_us_page">
-        <section class="hero-wrap js-fullheight" style="margin-top: 5%">
+        <section class="hero-wrap js-fullheight">
           <div class="container px-0">
             <div
               class="row no-gutters slider-text js-fullheight align-items-center content-center"
@@ -108,8 +106,11 @@
             >
               <div class="col-md-12 ftco-animate text-lg-center">
                 <center>
-                  <br />
-                  <div class="desc heartbeat" id="about_us">
+                  <br/> <br>
+                  <img src="./images/mosaic/mix1.svg" width="20%" style="position: absolute;z-index: 4;margin-left: -35%; margin-top: -5%;">
+                  <img src="./images/mosaic/dot_orange.svg" width="10%" style="position: absolute;z-index: 4;margin-left: 22%; margin-top: 6%;">
+                  
+                  <div class="desc bounce-top" id="about_us" style="margin-top: 5%;">
                     <p>
                       <a class="text-gn-white">ABOUT </a>
                       <a class="text-gn-green">US</a>
@@ -133,7 +134,7 @@
                         >we feel now is the time to put these skills</a
                       ><br />
                       <a class="text-about"
-                        >in to practice for a greater good.</a
+                        >in to practice for <b>a greater good</b>.</a
                       >
                       <br />
                       <br />
@@ -173,6 +174,10 @@
                     </p>
                   </center>
                 </div>
+
+                <img src="./images/mosaic/batik.svg" width="10%" style="margin-left: -80%; margin-top: 2%;">
+                <img src="./images/mosaic/dot_green.svg" width="10%" style="position: absolute;z-index: 4;margin-left: -1%; margin-top: 11%;">
+                <img src="./images/mosaic/thrive.svg" width="25%" style="position: absolute;z-index: 99;margin-left: 65%; margin-top: 15.3%;">
               </div>
             </div>
           </div>
@@ -186,62 +191,55 @@
           style="cursor: pointer"
         ></li>
       </ul>
-      
-      <footer class="footer">
-        <div
-          class="row align-items-center justify-content-left"
-          data-scrollax-parent="true"
-        >
+
+      <footer class="footer" style="margin-top: 22%;">
+        <div class="row align-items-center justify-content-left" data-scrollax-parent="true">
           <div class="col-md-6 ftco-animate text-lg-left">
-            <div
-              class="desc-founder"
-              style="line-height: 400% !important; margin-left: 3%"
-            >
-              <a class="text-footer-white">LET'S</a> <br />
-              <a class="text-footer-white">STRIVE</a>
-            </div>
+            <img
+            class="colorlib-logo"
+            src="./images/thrive_logo_white.svg"
+            alt=""
+            width="20%" id="logo_thrive"/>
           </div>
 
           <div class="col-md-6 ftco-animate text-lg-right">
-            <div
-              class="desc-founder"
-              style="line-height: 400%; margin-right: 3%"
-            >
-              <a style="margin-right: 6%; font-size: 200%" id="connect"
-                >Connect</a
-              >
-              <a
-                href="https://www.instagram.com/thrivedesignagency"
-                target="_blank"
-              >
+            <div class="desc-founder" style="line-height: 400%; margin-right: 3%">
+              <a href="/contact_us.html" target="_blank">
                 <img
-                  src="/images/logo-ig.svg"
+                  src="./images/logo-email.svg"
+                  alt="email"
+                  width="10%"
+                  style="margin-right: 2%"
+                />
+              </a>
+              <a href="https://www.instagram.com/thrivedesignagency" target="_blank">
+                <img
+                  src="./images/logo-ig.svg"
                   alt="instagram"
                   width="10%"
-                  style="margin-right: 6%"
+                  style="margin-right: 2%"
                 />
               </a>
-              <a
-                href="https://www.facebook.com/ThriveDesignAgency"
-                target="_blank"
-              >
+              <a href="https://www.facebook.com/ThriveDesignAgency" target="_blank">
                 <img
-                  src="/images/logo-fb.svg"
+                  src="./images/logo-fb.svg"
                   alt="facebook"
-                  width="4%"
-                  style="margin-right: 6%"
+                  width="10%"
+                  style="margin-right: 2%"
                 />
               </a>
-              <a
-                href="https://www.linkedin.com/company/thrivedesignagency"
-                target="_blank"
-              >
-                <img src="/images/logo-in.svg" alt="instagram" width="8%" />
+              <a href="https://www.linkedin.com/company/thrivedesignagency" target="_blank">
+                <img
+                  src="./images/logo-in.svg"
+                  alt="linkedin"
+                  width="10%"
+                />
               </a>
             </div>
           </div>
         </div>
       </footer>
+      
     </div>
 
     <script src="js/jquery.min.js"></script>

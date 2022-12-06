@@ -33,7 +33,7 @@
       <nav
         id="colorlib-main-nav"
         role="navigation"
-        style="background-color: #49aea6 !important"
+        style="background-image: url('./images/mosaic/bgnav.svg');background-repeat: no-repeat; max-width: 100%; height: auto; background-size: cover;"
       >
         <a
           href="#"
@@ -79,7 +79,7 @@
         </div>
       </nav>
 
-      <header id="header">
+      <header id="header" style="background-color: transparent;">
         <div class="container">
           <div class="colorlib-navbar-brand">
             <a href="/">
@@ -87,19 +87,16 @@
                 class="colorlib-logo"
                 src="./images/thrive_logo.svg"
                 alt=""
-                width="20%" id="logo_thrive"
-              />
+                width="20%" id="logo_thrive"/>
             </a>
           </div>
-          <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"
-            ><i></i
-          ></a>
+          <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
         </div>
       </header>
 
-      <div id="landing-page">
+      <div id="landing-page"">
 
-        <section class="hero-wrap js-fullheight" id="halaman1">
+        <section class="hero-wrap js-fullheight" id="halaman1" style="background-image: url('./images/mosaic/bg1.svg');background-repeat: no-repeat;width: 100%; background-size: 100% 100%;">
           <div class="container px-0">
             <div
               class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
@@ -108,11 +105,10 @@
               <div class="col-md-12 ftco-animate">
                 <div
                   class="desc text-lg-left"
-                  style="line-height: 4vw !important; margin-top: 5%"
+                  style="line-height: 3.5vw !important; margin-top: 13%; padding-bottom: -15%;"
                   id="landingpage"
                 >
-                  <br />
-                  <div class="css-typing" id="landingpage">
+                  <div class="slide-right" id="landingpage">
                     <p>
                       <a class="text-gn-white-filled">HI! </a> <a class="text-gn-green-filled">WE'RE THRIVE DESIGNS.</a> <br>
                     </p>
@@ -129,7 +125,7 @@
                   </a>
                 </div>
 
-                <div class="desc" style="color: white; margin-top: -3vw">
+                <div class="desc" style="color: white; margin-top: -1vw">
                   <center style="line-height: 0.3px">
                     <a id="txtScroll">scroll</a>
                     <a href="#halaman2" onclick="slideDown();">
@@ -140,9 +136,10 @@
               </div>
             </div>
           </div>
+        
         </section>
 
-        <section class="hero-wrap js-fullheight" id="halaman2" style="padding-bottom: 40% !important;">
+        <section class="hero-wrap js-fullheight" id="halaman2" style="margin-top: 12%; padding-bottom: 40% !important;background-image: url('./images/mosaic/bg2.svg');background-repeat: no-repeat;width: 100%; background-size: 100% 100%;">
           <div class="container px-3">
             <div
               class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
@@ -151,7 +148,7 @@
               <div class="col-md-12 ftco-animate text-lg-left">
 
                 <div class="desc" style="line-height: 4vw;">
-                  <div id="animHalaman2"> <br>
+                  <div id="animHalaman2"> <br> <br>
                     <p>
                       <a class="text-gn-white">WE PARTNER WITH </a> <br />
                     </p>
@@ -185,7 +182,7 @@
           </div>
         </section>
 
-        <section class="hero-wrap js-fullheight" id="halaman3">
+        <section class="hero-wrap js-fullheight" id="halaman3" style="background: rgba(0, 0, 0, .6); background-image: url('./images/mosaic/bg3.svg');background-repeat: no-repeat;width: 100%; background-size: cover;">
           <div class="container">
             <div
               class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
@@ -195,12 +192,12 @@
                 <div id="animHalaman3a">
                   <div
                     class="desc"
-                    style="line-height: 450%; white-space: nowrap;margin-top: -5%;"
+                    style="line-height: 7vw; white-space: nowrap;margin-top: 5%;"
                   > <br>
                       <p>
                         <a class="text-gn-white1">WHAT</a> <br />
                         <a class="text-gn-green2"> WE </a>
-                        <a class="text-gn-orange1">DO</a> <br />
+                        <a class="text-gn-orange1">DO</a>
                       </p>  
                   </div>
 
@@ -219,7 +216,7 @@
               <div class="col-md-6 ftco-animate text-lg-center" id="animHalaman3b">
                 
                 <div class="desc-img" style="margin-top: 10% !important">
-                  <img src="./images/bsd.svg" width="85%" alt="circle" />
+                  <!-- <img src="./images/bsd.svg" width="85%" alt="circle" /> -->
                 </div>
                 
               </div>
@@ -260,57 +257,48 @@
         </ul>
       </div>
 
-      <br />
-      <footer class="footer">
-        <div
-          class="row align-items-center justify-content-left"
-          data-scrollax-parent="true"
-        >
+      <footer class="footer" style="margin-top: -1%;">
+        <div class="row align-items-center justify-content-left" data-scrollax-parent="true">
           <div class="col-md-6 ftco-animate text-lg-left">
-            <div
-              class="desc-founder"
-              style="line-height: 400% !important; margin-left: 3%"
-            >
-              <a class="text-footer-white">LET'S</a> <br />
-              <a class="text-footer-white">STRIVE</a>
-            </div>
+            <img
+            class="colorlib-logo"
+            src="./images/thrive_logo_white.svg"
+            alt=""
+            width="20%" id="logo_thrive"/>
           </div>
 
           <div class="col-md-6 ftco-animate text-lg-right">
-            <div
-              class="desc-founder"
-              style="line-height: 400%; margin-right: 3%"
-            >
-              <a style="margin-right: 6%; font-size: 200%" id="connect"
-                >Connect</a
-              >
-              <a
-                href="https://www.instagram.com/thrivedesignagency"
-                target="_blank"
-              >
+            <div class="desc-founder" style="line-height: 400%; margin-right: 3%">
+              <a href="/contact_us.html" target="_blank">
+                <img
+                  src="./images/logo-email.svg"
+                  alt="email"
+                  width="10%"
+                  style="margin-right: 2%"
+                />
+              </a>
+              <a href="https://www.instagram.com/thrivedesignagency" target="_blank">
                 <img
                   src="./images/logo-ig.svg"
                   alt="instagram"
                   width="10%"
-                  style="margin-right: 6%"
+                  style="margin-right: 2%"
                 />
               </a>
-              <a
-                href="https://www.facebook.com/ThriveDesignAgency"
-                target="_blank"
-              >
+              <a href="https://www.facebook.com/ThriveDesignAgency" target="_blank">
                 <img
                   src="./images/logo-fb.svg"
                   alt="facebook"
-                  width="4%"
-                  style="margin-right: 6%"
+                  width="10%"
+                  style="margin-right: 2%"
                 />
               </a>
-              <a
-                href="https://www.linkedin.com/company/thrivedesignagency"
-                target="_blank"
-              >
-                <img src="./images/logo-in.svg" alt="instagram" width="8%" />
+              <a href="https://www.linkedin.com/company/thrivedesignagency" target="_blank">
+                <img
+                  src="./images/logo-in.svg"
+                  alt="linkedin"
+                  width="10%"
+                />
               </a>
             </div>
           </div>

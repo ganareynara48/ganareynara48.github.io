@@ -38,7 +38,7 @@
       <nav
         id="colorlib-main-nav"
         role="navigation"
-        style="background-color: #49aea6 !important"
+        style="background-image: url('./images/mosaic/bgnav.svg');background-repeat: no-repeat; max-width: 100%; height: auto; background-size: cover;"
       >
         <a
           href="#"
@@ -52,11 +52,9 @@
             <div class="row no-gutters">
               <div class="col-md-12 text-xl-center text-nav-sum">
                 <ul>
+                  <li><a href="/" id="home" class="text-gn-nav">HOME</a></li>
                   <li>
-                    <a href="/index.html" id="home" class="text-gn-nav">HOME</a>
-                  </li>
-                  <li>
-                    <a href="#" id="our_work" class="text-gn-active"
+                    <a href="/our_work.html" id="our_work" class="text-gn-active"
                       >OUR WORK</a
                     >
                   </li>
@@ -105,7 +103,7 @@
       </header>
 
       <div id="our-work">
-        <section class="hero-wrap js-fullheight" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/bg.svg') no-repeat center; height: 100%; background-size: cover; z-index: 0;">
+        <section class="hero-wrap js-fullheight" style="background: url('./images/mosaic/bg3.svg') no-repeat center; background-size: cover;">
           <div class="container px-0" id="con_about_us">
             <div
               class="row no-gutters slider-text js-fullheight align-items-center content-center"
@@ -115,15 +113,12 @@
                 <center>
                   <br />
 
-                  <div class="desc heartbeat" id="about_us">
-                    <p>
-                      <a class="text-gn-white">OUR </a>
-                      <a class="text-gn-orange">WORK</a>
-                    </p>
-                  </div>
-
                   <div class="desc bounce-top" id="txt-about-center">
                       <center>
+                        <p>
+                          <a class="text-gn-white">OUR </a>
+                          <a class="text-gn-orange">WORK</a>
+                        </p>
                         <p>
                           <a class="text-about"
                             >We've partnered together with brands across
@@ -269,60 +264,53 @@
       </ul>
 
       <footer class="footer">
-        <div
-          class="row align-items-center justify-content-left"
-          data-scrollax-parent="true"
-        >
+        <div class="row align-items-center justify-content-left" data-scrollax-parent="true">
           <div class="col-md-6 ftco-animate text-lg-left">
-            <div
-              class="desc-founder"
-              style="line-height: 400% !important; margin-left: 3%"
-            >
-              <a class="text-footer-white">LET'S</a> <br />
-              <a class="text-footer-white">STRIVE</a>
-            </div>
+            <img
+            class="colorlib-logo"
+            src="./images/thrive_logo_white.svg"
+            alt=""
+            width="20%" id="logo_thrive"/>
           </div>
 
           <div class="col-md-6 ftco-animate text-lg-right">
-            <div
-              class="desc-founder"
-              style="line-height: 400%; margin-right: 3%"
-            >
-              <a style="margin-right: 6%; font-size: 200%" id="connect"
-                >Connect</a
-              >
-              <a
-                href="https://www.instagram.com/thrivedesignagency"
-                target="_blank"
-              >
+            <div class="desc-founder" style="line-height: 400%; margin-right: 3%">
+              <a href="/contact_us.html" target="_blank">
                 <img
-                  src="/images/logo-ig.svg"
+                  src="./images/logo-email.svg"
+                  alt="email"
+                  width="10%"
+                  style="margin-right: 2%"
+                />
+              </a>
+              <a href="https://www.instagram.com/thrivedesignagency" target="_blank">
+                <img
+                  src="./images/logo-ig.svg"
                   alt="instagram"
                   width="10%"
-                  style="margin-right: 6%"
+                  style="margin-right: 2%"
                 />
               </a>
-              <a
-                href="https://www.facebook.com/ThriveDesignAgency"
-                target="_blank"
-              >
+              <a href="https://www.facebook.com/ThriveDesignAgency" target="_blank">
                 <img
-                  src="/images/logo-fb.svg"
+                  src="./images/logo-fb.svg"
                   alt="facebook"
-                  width="4%"
-                  style="margin-right: 6%"
+                  width="10%"
+                  style="margin-right: 2%"
                 />
               </a>
-              <a
-                href="https://www.linkedin.com/company/thrivedesignagency"
-                target="_blank"
-              >
-                <img src="/images/logo-in.svg" alt="instagram" width="8%" />
+              <a href="https://www.linkedin.com/company/thrivedesignagency" target="_blank">
+                <img
+                  src="./images/logo-in.svg"
+                  alt="linkedin"
+                  width="10%"
+                />
               </a>
             </div>
           </div>
         </div>
       </footer>
+
     </div>
 
     <script src="js/jquery.min.js"></script>

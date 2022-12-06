@@ -133,35 +133,25 @@ $("#submit_email").click(function (e) {
 });
 
 function slideDown() {
-  $( "#animHalaman2" ).addClass( "slide-down" );
-  $( "#landingpage" ).removeClass( "css-typing" );
+  $( "#animHalaman2" ).addClass( "bounce-top" );
 }
 
 function toHalaman1 () { 
-  $( "#landingpage" ).addClass( "css-typing" );
-
-  $( "#animHalaman2" ).removeClass( "slide-down" );
+  $( "#animHalaman2" ).removeClass( "bounce-top" );
 }
 
 function toHalaman2 () { 
   $( "#animHalaman3a" ).removeClass( "roll-in-left" );
   $( "#animHalaman3b" ).removeClass( "roll-in-right" );
 
-  $( "#animHalaman2" ).addClass( "slide-down" );
+  $( "#animHalaman2" ).addClass( "bounce-top" );
 }
 
 function toHalaman3 () { 
-  $( "#animHalaman2" ).removeClass( "slide-down" );
+  $( "#animHalaman2" ).removeClass( "bounce-top" );
   $( "#animHalaman4a" ).removeClass( "slide-up" );
   $( "#animHalaman4b" ).removeClass( "slide-down" );
 
   $( "#animHalaman3a" ).addClass( "roll-in-left" );
   $( "#animHalaman3b" ).addClass( "roll-in-right" );
-}
-
-function toHalaman4 () { 
-  $( "#animHalaman3a" ).removeClass( "slide-right" );
-
-  $( "#animHalaman4a" ).addClass( "slide-up" );
-  $( "#animHalaman4b" ).addClass( "slide-down" );
 }
